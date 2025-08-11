@@ -1,0 +1,811 @@
+/* Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/* Reset */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Code */
+
+html{}
+
+
+body {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: #E4E8F0;
+    line-height: 156%;
+    background-color: #16181C;
+    font-size: 1.25rem;
+}
+
+#super-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-section {
+    height: calc(100lvh - 200px);
+    min-height: 540px;
+    max-height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-text {
+    padding-top: 4px;
+    margin-left: 12px;
+}
+.logo-text .job-title {
+    margin-top: -4px;
+    opacity: .7;
+}
+
+.logo-image{
+    width: 66px;
+    border-radius: 100%;
+    border: 1px solid rgba(214, 221, 233, .1);
+}
+
+p {
+    line-height: 156%;
+}
+
+.text-secondary {
+    font-style: normal;
+    font-size: 1.0625rem;
+}
+
+.cta {
+    display: flex;
+    border: 1px solid rgba(255, 158, 78, .4);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+padding: 4px;
+color: #181818;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+}
+.cta div {
+    display: flex;
+    background-color: #FF9E4E;
+    padding-bottom:  3.5px ;
+    width: 148px;
+    height: 56px;
+        border-radius: 50px;
+        text-align: center;
+            align-items: center;
+    justify-content: center;
+
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -52px;
+    /* position: absolute;
+    top: 19%;
+    left: 0; */
+}
+
+
+.instrument-serif-regular {
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+h1 {
+      font-family: "Instrument Serif", serif;
+    font-size: 5.875rem;
+      font-weight: 400;
+  font-style: normal;
+  line-height: 97%;
+
+}
+
+.main-content h1 {
+    max-width: 725px;
+}
+
+.main-content p {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 495px;
+    font-weight: 500;
+    opacity: .8;
+    line-height: 156%;
+}
+
+.client-logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(214, 221, 233, .05);
+        border-bottom: 1px solid rgba(214, 221, 233, .05);
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.client-logo-container {
+    display: flex;
+    border-right: 1px solid rgba(214, 221, 233, .05);
+}
+.client-logo {
+    display: block;
+    padding: 20px 48px;
+    max-height: 64px;
+    border-left: 1px solid rgba(214, 221, 233, .05);
+
+}
+
+.client-logo img {
+    width: 100%;
+}
+
+.client-logo.stynt img{
+    margin-top: -2px;
+}
+
+.client-logo.collx img{
+    margin-top: -2px;
+}
+
+.client-logo.hps img{
+    margin-top: -1px;
+}
+
+.client-logo.mightydigits img{
+    margin-top: -4px;
+}
+.client-logo.kasafik img{
+    margin-top: 1px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 124px;
+}
+
+h2 {
+      font-family: "Instrument Serif", serif;
+    font-size: 4rem;
+      font-weight: 400;
+  font-style: normal;
+  line-height: 97%;
+  text-align: center;
+    padding-bottom: 80px;
+}
+
+.project {
+    width: 1024px;
+    height: 512px;
+    border-radius: 20px;
+        background: #1A1C21;
+        display: flex;
+
+}
+
+.project .image-section {
+    height: 100%;
+    width: 548px;
+    background: #23262C;
+    border-radius: 20px 0px 0px 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.project .image-section img{
+    width: 402px;
+    height: 570px;
+    left: 80px;
+    top: -32px;
+    z-index: 100;
+    position: absolute;
+}
+
+.project .content-section {
+    width: 475px;
+    height: 512px;
+    background: #2A2C33;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+.projects .cta {
+    display: flex;
+    border: 1px solid #62646C;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+padding: 4px;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+color: #37393E;
+}
+.project .cta div {
+    display: flex;
+    background-color: #62646C;
+    padding-bottom:  3.5px ;
+    width: 148px;
+    height: 56px;
+        border-radius: 50px;
+        text-align: center;
+            align-items: center;
+    justify-content: center;
+
+}
+
+.project-action {
+    display: flex;
+    align-items: center;
+}
+
+.project-action span {
+    opacity: 50%;
+    display: block;
+    margin-left: 16px;
+}
+
+
+h3 {
+      font-family: "Instrument Serif", serif;
+    font-size: 2.75rem;
+      font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+  padding-bottom: 16px;
+  margin-top: -60px;
+}
+
+.project .project-text p {
+    opacity: .8;
+}
+
+.project.scs .project-text p {
+    max-width: 350px;
+}
+
+.project-action .cta {
+    width: 187px;
+    height: 64px;
+}
+
+.project-action .cta div{
+    width: 177px;
+    height: 56px;
+}
+
+
+
+/* Jobswap project */
+
+ .project.jobswap .image-section img {
+    min-width: 660px;
+    max-width: 660px;
+    height: 620px;
+    position: absolute;
+    top: -61px;
+    left: -120px;
+}
+
+ .project.jobswap {
+    margin-top: 120px;
+ }
+
+ .project.jobswap .content-section {
+    border-radius: 20px 0px 0px 20px;
+ }
+
+  .project.jobswap .image-section {
+    border-radius: 0px 20px 20px 0px;
+ }
+
+
+ .project.jobswap h3 {
+    margin-top: -112px;
+ }
+ 
+
+ /* Kasafik */
+
+ .project.kasafik .image-section img {
+    min-width: 676px;
+    max-width: 676px;
+    height: 475px;
+    position: absolute;
+    top: 24px;
+    left: -64px;
+}
+
+.project.kasafik {
+    margin-top: 100px;
+ }
+
+ .project.kasafik h3 {
+    margin-top: -112px;
+ }
+
+
+
+/* Testimonials */
+
+ .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+ }
+
+ .testimonials-container {
+    width: 1024px;
+    display: flex;
+ }
+
+
+ .main-testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 488px;
+    padding: 48px;
+    background: #2A2C33;
+
+ } 
+  .main-testimonial h3{
+    font-size: 3rem;
+    line-height: 114%;
+    font-style: italic;
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: 25px;
+}
+
+
+.client-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.client-info .client-image{
+  
+}
+
+.client-role {
+        align-items: center;
+    display: flex;
+    margin-top: -4px;
+}
+
+.client-content {
+        margin-left: 12px;
+}
+
+.fred .client-role img{
+    margin-left: 6px;
+    margin-top: -2.5px;
+}
+
+.client-role p {
+    opacity: .7;
+}
+
+
+.main-testimonial .p1 {
+    margin-bottom: 8px;
+}
+
+.main-testimonial p {
+    
+}
+
+.client-testimonial {
+    background: #2A2C33;
+    border-radius: 20px;
+    padding: 48px;
+    padding-top: 44px;
+    width: 488px;
+    height: 234px;    
+}
+
+.client-testimonial.rick {
+    margin-bottom: 48px;
+}
+
+.testimonials-container {
+
+    justify-content: space-between;
+}
+
+.testimonials-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.testimonials-column .client-testimonial .client-info{
+    margin-top: 26px;
+
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.testimonials-container {
+    min-height: 516px;
+}
+
+.main-testimonial .client-info {
+    margin-top: 28px;
+}
+
+.main-testimonial .p1 {
+    opacity: .8;
+}
+.main-testimonial .p2 {
+    opacity: .8;
+}
+
+.main-testimonial .client-role img {
+    
+}
+
+.testimonials-column .client-testimonial .client-content img {
+    margin-left: 4px;
+}
+
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    align-items: center;
+}
+
+.about-me-container {
+    display: flex;
+    width: 802px;
+    justify-content: space-between;
+}
+
+.about-me .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 189px;
+}
+
+.about-me .second-section {
+    width: 565px;
+    padding: 48px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background: #2A2C33;
+    border-radius: 20px;
+}
+
+.about-me .second-section p {
+    margin-top: 10px;
+}
+
+.years-of-exp {
+    border: 1px solid #2A2C33;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 24px;
+}
+
+.years-of-exp .years {
+  font-family: "Instrument Serif", serif;
+    font-size: 5.875rem;
+      font-weight: 400;
+  font-style: normal;
+  line-height: 97%;   
+  opacity: .7;
+  margin-bottom: 12px;
+}
+
+.years-of-exp .exp-text {
+    opacity: .7;
+}
+
+.sign {
+    /* border: 1px solid white;
+    border-radius: 20px;
+    padding: 32px; */
+    margin-top: 64px;
+}
+
+.final-cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.final-cta-section .cta {
+    font-size: 1.375rem;
+    width: 200px;
+    height: 80px;
+    padding: 6px;
+}
+
+.final-cta-section .cta div{
+    font-size: 1.375rem;
+    width: 100%;
+    height: 100%;
+}
+
+.final-cta-section h2 {
+    padding-bottom: 42px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #25272c;
+    margin-top: 160px;
+    padding: 32px;
+}
+
+footer p {
+    opacity: .5;
+}
+
+.under-dev {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    /* h1 {
+        font-size: 5rem;
+    }
+    body {
+        font-size: 1.125rem;
+    }
+    .text-secondary {
+        font-size: 1rem;
+    }
+    .hero-section .main-content {
+        margin-top: -60px;
+    }
+
+    .main-content p {
+        max-width: 464px;
+        margin-top: 40px;
+    }
+
+    .projects {
+        padding-top: 100px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    } 
+    */
+
+    #super-container {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .under-dev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100lvh;
+        padding: 24px;
+    }
+    .under-dev-p1 {
+          font-family: "Instrument Serif", serif;
+    font-size: 5rem;
+      font-weight: 400;
+  font-style: normal;
+  max-width: 500px;
+  line-height: 97%;
+  margin-top: -40px;
+  padding-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+        .under-dev-p1 {
+          font-family: "Instrument Serif", serif;
+    font-size: 3rem;
+      font-weight: 400;
+  font-style: normal;
+  max-width: 500px;
+  line-height: 97%;
+  margin-top: -40px;
+  padding-bottom: 40px;
+    }
+}
+
+/* 
+@media screen and (max-width: 1025px) {
+    .hero-section .main-content {
+        margin-top: -40px;
+    }
+
+    .client-logo.kasafik {
+        display: none;
+    }
+
+    .projects, .testimonials, .about-me, .final-cta-section, footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .hero-section .main-content {
+
+    }
+
+    .hero-section .main-content p{
+        margin-top: 24px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        width: 400px;
+    }
+
+
+    .client-logo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+        width: 80%;
+        border-right: 1px solid rgba(214, 221, 233, .05);
+
+    }
+
+    .client-logo {
+        border: none;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(214, 221, 233, .05);
+        border-left: 1px solid rgba(214, 221, 233, .05);
+
+    }
+
+
+    .client-logo img {
+        width: auto;
+    }
+
+    .client-logo:nth-child(5) {
+        grid-column: 1 / span 2;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    .hero-section {
+        max-height: 1200px;
+    }
+
+
+} */
